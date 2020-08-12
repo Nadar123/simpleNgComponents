@@ -1,0 +1,11 @@
+<app-divider>Modal</app-divider>
+<button (click)="openModal()" class="ui button"> Open Modal</button>
+<app-modal (close)="openModal()" *ngIf="modalOpen">
+  <div modalTitle> Modal Title </div>
+  <p>
+    Modal Content
+  </p>
+</app-modal>
+
+<app-divider> Accordion </app-divider>
+<app-accordion [items]="items"></app-accordion>

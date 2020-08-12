@@ -1,0 +1,15 @@
+<app-divider>
+  Table
+</app-divider>
+<app-table [data]="data" [headers]="headers" classNames="striped celled"></app-table>
+<app-tabs>
+  <div class="ui vertical fluid tabular menu">
+    <a 
+    class="item" 
+    routerLinkActive="active" 
+    routerLink="./"
+    [routerLinkActiveOptions]="{exact: true}">Bio</a>
+    <a class="item" routerLinkActive="active"  routerLink="companies">Companies</a>
+    <a class="item" routerLinkActive="active"  routerLink="partners">Partners</a>
+  </div>
+</app-tabs>
